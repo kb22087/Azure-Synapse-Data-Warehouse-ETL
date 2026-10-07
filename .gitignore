@@ -1,0 +1,27 @@
+# Azure / cloud configuration
+*.env
+.env
+*.key
+*.pem
+*.pfx
+
+# Credentials and secrets
+secrets/
+credentials/
+config.local.*
+
+# Temporary files
+*.tmp
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+
+# IDE files
+.vscode/
+.idea/
