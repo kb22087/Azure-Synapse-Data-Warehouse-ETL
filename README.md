@@ -124,6 +124,44 @@ The pipeline processed the manufacturing dataset successfully.
 The complete pipeline was executed successfully in Azure Synapse Analytics.
 
 The warehouse was subsequently verified after resuming the dedicated SQL pool, confirming that the stored dimensional and fact data remained intact.
-│
-└── architecture/
-    └── azure-synapse-etl-architecture.png
+
+
+---
+
+## 📸 Implementation Evidence
+
+### Azure Resources
+
+The project resources were deployed within a dedicated Azure Resource Group.
+
+![Azure Resource Group](screenshots/01_resource_group.png)
+
+### Raw Data in Azure Data Lake Storage Gen2
+
+The raw manufacturing dataset was stored in the `raw` container of Azure Data Lake Storage Gen2.
+
+![Raw Data Storage](screenshots/02_raw_data_storage.png)
+
+### ETL Pipeline
+
+The Synapse pipeline orchestrates the movement of raw data into staging followed by the manufacturing data transformation.
+
+![ETL Pipeline](screenshots/03_etl_pipeline.png)
+
+### Fact Table
+
+The transformed manufacturing records are loaded into the `FactProduction` table for analytical processing.
+
+![Fact Production](screenshots/04_fact_table.png)
+
+### Dimension Tables
+
+The warehouse includes dimensional structures such as `DimMachine`, `DimProduct`, `DimPlant`, and `DimDate`.
+
+![Dimension Tables](screenshots/05_dimension_tables.png)
+
+### Analytical Results
+
+SQL queries were used to calculate key manufacturing performance indicators from the completed warehouse.
+
+![Analytics Results](screenshots/06_analytics_results.png)
