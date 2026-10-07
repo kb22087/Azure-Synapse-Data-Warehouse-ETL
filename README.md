@@ -10,6 +10,14 @@
 The end-to-end ETL pipeline, dimensional data warehouse, data validation,
 and analytical queries have been implemented and verified in Azure Synapse Analytics.
 
+# Security
+
+This repository does not contain Azure credentials, access keys,
+connection strings, passwords, SAS tokens, or other authentication secrets.
+
+Azure resources should be configured using secure authentication
+mechanisms, and secrets should never be committed to source control.
+
 ## 📐 Architecture
 
 ![Azure Synapse ETL Architecture](architecture/azure-synapse-etl-architecture.png)
