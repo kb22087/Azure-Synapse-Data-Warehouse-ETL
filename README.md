@@ -3,6 +3,12 @@
 **An end-to-end cloud data warehousing and ETL pipeline for manufacturing analytics using Microsoft Azure.**
 
 ---
+## 🚀 Project Status
+
+**Status:** Completed
+
+The end-to-end ETL pipeline, dimensional data warehouse, data validation,
+and analytical queries have been implemented and verified in Azure Synapse Analytics.
 
 ## 📐 Architecture
 
